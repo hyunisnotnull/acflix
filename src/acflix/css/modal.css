@@ -1,0 +1,239 @@
+/* 모달 이미지 부분  */
+
+.modal {
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    left: 0; top: 0;
+    z-index: 999;
+    overflow:hidden;
+}
+
+.modal-content {
+    background-color: #222326;
+    border-radius: 20px;
+    max-height: calc(100vh - 80px);
+    scrollbar-width: none;
+    width:auto;
+    overflow-y: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:20px;
+    margin-bottom:40px;
+}
+.modal-content img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    float:left;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.m_close{
+    color: #fff;
+    font-size:1.5em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50px;
+    position:absolute;
+    right:0.5%;
+    top:0%
+
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    color:#fff
+}
+.modal-content > h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.modal-content  .m_info{
+    color:#fff;
+    text-align: left;
+    line-height: 160%;
+    height:auto;
+    min-height:120px;
+    font-size:16px;
+}
+.modal-content > .m_score{
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+.modal-content > .m_audi{
+    color: #fff;
+    font-size: 1.2em;
+
+}
+.modal-content .ytb{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    margin:0;
+    opacity: 0.8;
+}
+.modal-content .ytb:hover{
+    opacity: 1  ;
+}
+.content-list{
+    height:100%;
+    margin: 0 auto;
+    width:100%;
+    max-width: 1780px;
+    margin-bottom: 300px;
+    padding: 0 20px;
+}
+
+
+/* 영화 리스트 부분 */
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+
+.title {
+    text-align: left;
+    font-size: bold;
+    color: #fff;
+    font-size:1.1em;
+    width:305px;
+    display: block;
+    opacity: 0.7;
+}
+
+
+.movie-item {
+    flex: 0 0 auto;
+    width:100%;
+    max-width: 250px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left:20px;
+    overflow: hidden;
+    margin-bottom:50px;
+  }
+
+
+.movie-item img {
+    max-width: 100%;
+    height: 375px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom:-15px;
+    z-index: 5000;
+}
+.movie-item:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.movie-item:hover .title{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.info {
+    padding-left:20px;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.left{
+    width:100%;
+    max-width:30px;
+    height:50px;
+    cursor: pointer;
+    position: absolute;
+    top:40%;
+    z-index: 50;
+    display: block;
+    left:-1%;
+    opacity: 0.7;    
+    
+}
+.right{
+    width:100%;
+    max-width: 30px;
+    height:50px;
+    cursor: pointer;
+    position: absolute;
+    top:40%;
+    right:-1%;
+    opacity: 0.7;
+}
+.left:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.right:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+/* 모달 리스트 부분 */
+.modal-list{
+    border-top:1px solid #ccc;
+    margin-top:100px;
+    justify-content: center;
+}
+.modal-list h2{
+    text-align: center;
+    margin-top:20px;
+    color:#fff;
+}
+.modal-list .modal-item{
+    display: block;
+    float:left;
+    width:160px;
+    
+}
+.modal-list .modal-item{
+    margin-left:18px;
+    margin-bottom:30px;
+}
+
+.modal-list .modal-item img{
+    width:160px;
+    height: 250px;
+    float:left;
+    display: block;
+    margin-bottom:5px;
+}
+.modal-title{
+    font-size: bold;
+    color: #fff;
+    font-size:0.9em;
+    width:160px;
+    display: block;
+    opacity: 0.7;
+    text-align: center;
+    height:30px;
+}
+
+
+/* 찜 버튼 */
+
+.favbtn img{
+    width:35px;
+    height: 35px;
+    margin: 3px 0 0 5px;
+    opacity: 1;
+}
+.favbtn img:hover{
+    opacity: 0.9;
+}
